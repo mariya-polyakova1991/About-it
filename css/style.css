@@ -23,7 +23,27 @@ a:hover {
   transition: all 0.2s linear;
   border: 0px;
 }
-.sub-menu {
+.nav-icon3 {
+  position: relative;
+}
+.menu-open {
+  position: absolute;
+  left: 120px;
+  top: 100px;
+}
+.menu-open a {
+  display: block;
+  border-bottom: 1px solid white;
+  background-color: #313030;
+  color: white;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+.menu-open a:hover {
+  background-color: #ff3f40;
+  transition: all 0.2s linear;
+}
+.sub-menu.menu-close {
   display: none;
 }
 .main-menu {
