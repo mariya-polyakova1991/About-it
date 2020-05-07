@@ -15,7 +15,11 @@
     padding: 0;
     flex-wrap: wrap;
   }
-
+  .container2,
+  .container1,
+  .grid {
+    width: 90%;
+  }
   /* Icon 1 */
 
   #nav-icon1,
@@ -98,5 +102,25 @@
   }
   .contact-info {
     width: 60%;
+  }
+  fieldset {
+    margin: 0 auto;
+  }
+
+  .form-fieldset {
+    margin-left: 0;
+    width: 100%;
+  }
+  .d-lg-flex.align-items-center.section-margin--large {
+    flex-direction: column;
+  }
+  .d-lg-flex.align-items-center {
+    flex-direction: column;
+  }
+}
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  html {
+    font-size: 12px;
   }
 }
