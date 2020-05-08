@@ -10,6 +10,12 @@
     display: none;
     list-style: none;
   }
+  section.d-lg-flex.align-items-center.section-margin--large {
+    margin-top: -35px;
+}
+.about__content {
+  padding: 100px 20px;
+}
   * {
     margin: 0 auto;
     padding: 0;
