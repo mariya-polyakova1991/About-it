@@ -35,20 +35,39 @@
         </nav>
       </div>
 
-      <div id="nav-icon-sub">
-        <div id="nav-icon3">
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+          <input type="checkbox" />
+
+          <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
           <span></span>
           <span></span>
           <span></span>
-          <span></span>
+
+          <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About us</li></a>
+            <a href="#"><li>Portfolio</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
         </div>
-        <ul class="sub-menu menu-close">
-          <li><a href="#1">Home</a></li>
-          <li><a href="#2">portfolio</a></li>
-          <li><a href="#3">About us</a></li>
-          <li><a href="#3">Contact</a></li>
-        </ul>
-      </div>
+      </nav>
     </header>
     <div class="bac-section-margin--large">
       <section class="d-lg-flex align-items-center section-margin--large">

@@ -23,8 +23,8 @@ a:hover {
   transition: all 0.2s linear;
   border: 0px;
 }
-.nav-icon3 {
-  position: relative;
+div#menuToggle {
+  display: none;
 }
 .menu-open {
   position: absolute;
