@@ -482,16 +482,17 @@ i {
   border-radius: 50%;
   display: none;
   cursor: pointer;
-  color: #6653d9;
+  color: #4c4c4c;
   background-color: rgba(255, 255, 255, 0.8);
-  border-color: #6653d9;
+  border-color: #4c4c4c;
   outline-color: #b6aaff;
 }
 
 .up-button:hover {
-  color: #473c8d;
+  color: #ff3f40;
   background-color: rgba(255, 255, 255, 0.8);
-  border-color: #473c8d;
+  border-color: #ff3f40;
+  outline: none;
 }
 .shown {
   display: inline-block;
