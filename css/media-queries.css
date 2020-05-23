@@ -30,10 +30,11 @@
     width: 100%;
   }
   .contact-info {
-    width: 60%;
+    width: 90%;
   }
   fieldset {
     margin: 0 auto;
+    width: 90%;
   }
 
   .form-fieldset {
@@ -46,7 +47,12 @@
   .d-lg-flex.align-items-center {
     flex-direction: column;
   }
-
+  .form {
+    margin: 50px 0;
+  }
+  .products-text.Meet .hcolor {
+    margin-top: 0;
+  }
   /*
  * Made by Erik Terwan
  * 24th of November 2015
