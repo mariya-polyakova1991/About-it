@@ -27,7 +27,7 @@
     width: 90%;
   }
   .about__video {
-    width: 100%;
+    max-width: 100%;
   }
   .contact-info {
     width: 60%;
