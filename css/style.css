@@ -497,3 +497,7 @@ i {
 .shown {
   display: inline-block;
 }
+div#menuToggle {
+  width: 0px;
+  margin-left: 0;
+}
