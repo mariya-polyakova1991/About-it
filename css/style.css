@@ -94,7 +94,7 @@ div#menuToggle {
   width: 50%;
 }
 .about__video video {
-  max-width: 90%;
+  width: 90%;
   overflow: hidden;
 }
 .about__content h1 {
