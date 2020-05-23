@@ -1,14 +1,14 @@
 /*button
  */
-let upButton = document.querySelector(".up-button");
+const upButton = document.querySelector(".up-button");
 
-window.onscroll = function () {
+window.addEventListener("scroll", function () {
   if (window.pageYOffset > 200) {
     upButton.classList.add("shown");
   } else {
     upButton.classList.remove("shown");
   }
-};
-upButton.onclick = function () {
+});
+upButton.addEventListener("click", function () {
   window.scrollTo(0, 0);
-};
+});
