@@ -24,7 +24,7 @@ a:hover {
   transition: all 0.2s linear;
   border: 0px;
 }
-div#menuToggle {
+div.menuToggle {
   display: none;
 }
 .menu-open {

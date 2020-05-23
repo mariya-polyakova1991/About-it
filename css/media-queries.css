@@ -63,15 +63,15 @@
  * production code, beware of the browser
  * prefixes.
  */
-  div#menuToggle {
+  div.menuToggle {
     display: block;
   }
 
-  div#menuToggle span {
+  div.menuToggle span {
     margin: 5px;
   }
 
-  #menuToggle {
+  .menuToggle {
     display: block;
     position: relative;
     top: 50px;
@@ -83,18 +83,18 @@
     user-select: none;
   }
 
-  #menuToggle a {
+  .menuToggle a {
     text-decoration: none;
     color: #4c4c4c;
     text-transform: uppercase;
     transition: color 0.3s ease;
   }
 
-  #menuToggle a:hover {
+  .menuToggle a:hover {
     color: tomato;
   }
 
-  #menuToggle input {
+  .menuToggle input {
     display: block;
     width: 40px;
     height: 32px;
@@ -113,7 +113,7 @@
   /*
   * Just a quick hamburger
   */
-  #menuToggle span {
+  .menuToggle span {
     display: block;
     width: 33px;
     height: 4px;
@@ -131,11 +131,11 @@
       background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
-  #menuToggle span:first-child {
+  .menuToggle span:first-child {
     transform-origin: 0% 0%;
   }
 
-  #menuToggle span:nth-last-child(2) {
+  .menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
@@ -143,7 +143,7 @@
   * Transform all the slices of hamburger
   * into a crossmark.
   */
-  #menuToggle input:checked ~ span {
+  .menuToggle input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
@@ -152,7 +152,7 @@
   /*
   * But let's hide the middle one.
   */
-  #menuToggle input:checked ~ span:nth-last-child(3) {
+  .menuToggle input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
@@ -160,7 +160,7 @@
   /*
   * Ohyeah and the last one should go the other direction
   */
-  #menuToggle input:checked ~ span:nth-last-child(2) {
+  .menuToggle input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
@@ -168,9 +168,9 @@
   * Make this absolute positioned
   * at the top left of the screen
   */
-  #menu {
+  .mobile-menu {
     position: absolute;
-    width: 100vh;
+    width: 100vw;
     margin: -100px 0 0 -50px;
     padding: 50px;
     padding-top: 125px;
@@ -187,7 +187,7 @@
     height: 100vh;
   }
 
-  #menu li {
+  .mobile-menu li {
     padding: 10px 0;
     font-size: 22px;
   }
@@ -195,7 +195,7 @@
   /*
   * And let's slide it in from the left
   */
-  #menuToggle input:checked ~ ul {
+  .menuToggle input:checked ~ ul {
     transform: none;
   }
 }
