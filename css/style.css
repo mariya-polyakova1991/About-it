@@ -277,10 +277,11 @@ div.menuToggle {
 }
 .mark-waugh-img {
   width: 150px;
-  height: 150px;
+  height: 200px;
   overflow: hidden;
   padding-top: 10px;
   padding-left: 10px;
+  border-radius: 20px;
 }
 .products-border1.border2 {
   margin: 20px 0px 50px;
@@ -324,7 +325,16 @@ div.menuToggle {
   margin-right: 10%;
   justify-content: space-around;
 }
-
+.container-full-foto {
+  min-width: 300px;
+  max-width: 300px;
+  height: 400px;
+}
+.full-photo {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 .products-text.mark-waugh {
   display: flex;
   flex-direction: column;
@@ -605,4 +615,11 @@ div#menuToggle {
 }
 .btn-active {
   color: #ff3f40;
+}
+
+.gallery__photo-preview {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
 }

@@ -9,6 +9,13 @@
   }
 }
 
+@media screen and (max-width: 1300px) {
+  .form {
+    width: 100%;
+  }
+}
+
+
 @media screen and (max-width: 1000px) {
   html {
     font-size: 14px;
@@ -72,9 +79,13 @@
   div.menuToggle span {
     margin: 5px;
   }
-  .form {
-    width: 100%;
-  }
+  
+
+.foto.mark-waugh {
+  display: block;
+  text-align: center;
+}
+  
   .prev,
   .next {
     margin-left: 0;
