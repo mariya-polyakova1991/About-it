@@ -11,6 +11,9 @@ ol {
 a {
   text-decoration: none;
 }
+button {
+  cursor: pointer;
+}
 html {
   font-size: 16px;
   scroll-behavior: smooth;
@@ -23,6 +26,22 @@ body {
 a:hover {
   transition: all 0.2s linear;
   border: 0px;
+}
+input:hover,
+textarea:hover,
+select:hover,
+button:hover {
+  transition: all 0.2s linear;
+  border-color: unset;
+  outline-color: unset;
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  outline-color: unset;
+  border-color: unset;
 }
 div.menuToggle {
   display: none;
@@ -110,19 +129,21 @@ div.menuToggle {
 .hcolor {
   color: #000;
   text-transform: uppercase;
+  padding: 10px;
 }
 .about__content p {
   margin: 0px auto 50px;
   font-size: 1rem;
 }
 .button.mt-xl-3 {
-  padding: 10px 25px;
+  padding: 10px;
   background-color: #ff2d2d;
   border-radius: 10px;
   color: white;
   text-decoration: none;
-  font-size: 1.125rem;
+  font-size: 0.6rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .button.mt-xl-3:hover {
@@ -164,7 +185,7 @@ div.menuToggle {
 .d-lg-flex.align-items-center {
   display: flex;
 }
-.container1 {
+.container-question {
   display: flex;
   width: 44%;
   margin: 0px auto;
@@ -176,13 +197,13 @@ div.menuToggle {
   width: 50%;
   padding: 3%;
 }
-.container-flex1,
-.container-flex2 {
+.container-Management,
+.container-Animation {
   display: flex;
   padding: 10px;
 }
-.container-flex1 .container,
-.container-flex2 .container {
+.container-Management .container,
+.container-Animation .container {
   width: 46%;
   padding: 2%;
 }
@@ -211,7 +232,7 @@ div.menuToggle {
   height: 1px;
   border-top: 2px solid #ececec;
 }
-.products-ul {
+.products-list {
   background-color: white;
   color: #4c4c4c;
   font-weight: bold;
@@ -222,15 +243,15 @@ div.menuToggle {
   height: 1px;
   border-top: 2px solid #ff2d2d;
 }
-.products-foto1,
-.products-foto2 {
+.products-top,
+.products-bottom {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.products-foto1 img,
-.products-foto2 img {
+.products-top img,
+.products-bottom img {
   filter: grayscale(1) blur(1px);
   overflow: hidden;
   width: 100%;
@@ -249,16 +270,17 @@ div.menuToggle {
 }
 .products-text.Meet {
   text-align: left;
-  margin: 70px 50px;
+  margin: 70px 10%;
 }
 .products-text.mark-waugh p {
   padding: 10px;
 }
-.mark-waugh1 {
+.mark-waugh-img {
   width: 150px;
   height: 150px;
   overflow: hidden;
   padding-top: 10px;
+  padding-left: 10px;
 }
 .products-border1.border2 {
   margin: 20px 0px 50px;
@@ -268,30 +290,41 @@ div.menuToggle {
   margin-bottom: 20px;
   margin-top: 140px;
 }
-.products-ul li {
+.products-list li {
   padding: 0 20px;
   display: inline-block;
   margin-right: 5px;
+  border: none;
 }
-.products-ul a {
+.menu-foto {
   font-size: 1.375rem;
   padding: 10px 0px;
   color: #4c4c4c;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
 }
 
-.products-ul a:hover {
+.products-list button:hover {
   color: #ff3f40;
+  border: none;
 }
-.products-ul.all ul {
+.products-list button:active {
+  color: #ff3f40;
+  border: none;
+}
+
+.products-list.all ul {
   text-transform: uppercase;
   text-align: center;
 }
 .feature-products1 {
   display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-around;
 }
-.team4 {
-  margin: 0 50px;
-}
+
 .products-text.mark-waugh {
   display: flex;
   flex-direction: column;
@@ -305,43 +338,56 @@ div.menuToggle {
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .foto.mark-waugh {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
 .form {
-  margin: 110px 50px 50px;
-  background: url(../img/banners/hero-banner.png) no-repeat;
+  background-repeat: no-repeat;
   color: rgb(255, 255, 255);
-  padding: 50px;
+  padding: 30px;
   text-shadow: black 1px 1px 1px;
+  position: relative;
+  margin: 30px auto;
+  width: 80%;
+  height: 500px;
+  overflow: hidden;
+  align-items: flex-end;
+  background-size: cover;
+}
+.img-one {
+  background-image: url(../img/banners/hero-banner.png);
+}
+.img-two {
+  background-image: url(../img/banners/1500x500.jpg);
+}
+.img-three {
+  background-image: url(../img/banners/1500x501.jpg);
 }
 .half-width {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
 }
 .half-width.max {
-  margin: 60px auto 130px;
-  width: 50%;
+  margin: 60px auto;
 }
 .email {
-  height: 40px;
-  width: 300px;
-  padding: 2px 5px;
+  padding: 2px 100px 2px 10px;
   vertical-align: middle;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  margin-right: 10px;
 }
 .button.mt-xl-3 {
   border: 0px;
 }
+.buttons {
+  margin: auto 10px;
+}
 
 .form-fieldset {
-  width: 91%;
-  margin-left: 9%;
   display: flex;
+  justify-content: space-around;
 }
 fieldset {
   width: 56%;
@@ -379,9 +425,7 @@ textarea:hover {
 .input1 {
   width: 40%;
 }
-input {
-  height: 40px;
-}
+
 section.form-fieldset {
   margin-bottom: 110px;
 }
@@ -500,4 +544,65 @@ i {
 div#menuToggle {
   width: 0px;
   margin-left: 0;
+}
+/* slider=============================================== */
+.container-slider {
+  position: relative;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  top: 5%;
+  width: auto;
+  padding: 30px 16px;
+  margin: 10%;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(163, 163, 163, 0.8);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(163, 163, 163, 0.3);
+}
+
+.background-menu {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* menu================================================== */
+.products-foto {
+  display: none;
+}
+.foto-active {
+  display: block;
+}
+.btn-active {
+  color: #ff3f40;
 }

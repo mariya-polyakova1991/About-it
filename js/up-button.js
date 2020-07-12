@@ -9,6 +9,7 @@ window.addEventListener("scroll", function () {
     upButton.classList.remove("shown");
   }
 });
+
 upButton.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });

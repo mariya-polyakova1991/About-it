@@ -36,32 +36,12 @@
           </div>
         </nav>
       </div>
-
-      <!--    Made by Erik Terwan    -->
-      <!--   24th of November 2015   -->
-      <!--        MIT License        -->
       <nav role="navigation">
         <div class="menuToggle" id="menuToggle">
-          <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
           <input type="checkbox" />
-
-          <!--
-    Some spans to act as a hamburger.
-    
-    They are acting like a real hamburger,
-    not that McDonalds stuff.
-    -->
           <span></span>
           <span></span>
           <span></span>
-
-          <!--
-    Too bad the menu has to be inside of the button
-    but hey, it's pure CSS magic.
-    -->
           <ul class="mobile-menu" id="menu">
             <a href="#"><li>Home</li></a>
             <a href="#team"><li>About us</li></a>
@@ -90,8 +70,8 @@
         </div>
         <div class="about__video">
           <video
-            src="video/videoplayback.mp4"
             class="video-play-button"
+            src="video/videoplayback.mp4"
             poster="img/blog/popular-post/blog_01.jpg"
             controls
           ></video>
@@ -101,7 +81,7 @@
     </div>
     <main>
       <section class="d-lg-flex align-items-center">
-        <div class="container1">
+        <div class="container-question">
           <div class="content">
             <h1 class="hcolor">
               do you know we can <br />
@@ -119,10 +99,10 @@
           </div>
         </div>
         <div class="grid">
-          <div class="container-flex1">
+          <div class="container-Management">
             <div class="container">
               <div class="content">
-                <div class="content-flex1">
+                <div>
                   <img
                     class="icon"
                     src="img/png/Settings.png"
@@ -141,7 +121,7 @@
             </div>
             <div class="container">
               <div class="content">
-                <div class="content-flex2">
+                <div>
                   <img
                     src="img/png/Pencil.png"
                     width="30"
@@ -158,10 +138,10 @@
               </div>
             </div>
           </div>
-          <div class="container-flex2">
+          <div class="container-Animation">
             <div class="container">
               <div class="content">
-                <div class="content-flex3">
+                <div>
                   <img
                     src="img/png/Diamond.png"
                     width="30"
@@ -179,7 +159,7 @@
             </div>
             <div class="container">
               <div class="content">
-                <div class="content-flex4">
+                <div>
                   <img
                     src="img/png/Truck2.png"
                     width="30"
@@ -211,43 +191,74 @@
             <div class="products-border1"></div>
           </div>
         </div>
-        <div class="products-ul all">
+        <div class="products-list all">
           <ul>
-            <li><a href="#">all</a></li>
-            <li><a href="#">print templatev</a></li>
-            <li><a href="#">web template</a></li>
-            <li><a href="#">user interface</a></li>
-            <li><a href="#">mock-up</a></li>
+            <li><button class="menu-foto btn-active">all</button></li>
+            <li><button class="menu-foto">print templatev</button></li>
+            <li><button class="menu-foto">web template</button></li>
+            <li><button class="menu-foto">user interface</button></li>
+            <li><button class="menu-foto">mock-up</button></li>
           </ul>
         </div>
-        <div class="products-foto">
-          <div class="products-foto1">
+        <div class="products-foto foto-active"></div>
+        <div class="products-foto foto-active">
+          <div class="products-top">
             <div class="foto-size">
               <img
-                class="products-foto1"
-                src="img/home/blog1.png"
+                class="products-top"
+                src="img/print/07208b947e6a0b9468e01c522f5689f7.jpg"
                 alt="blog1"
               />
             </div>
             <div class="foto-size">
               <img
-                class="products-foto1"
-                src="img/home/blog2.png"
+                class="products-top"
+                src="img/print/1562945766.jpg"
                 alt="Truck2"
               />
             </div>
             <div class="foto-size">
               <img
-                class="products-foto1"
-                src="img/home/blog3.png"
+                class="products-top"
+                src="img/print/15f760f0691f9bc248441e36c1ef5203.jpg"
                 alt="Truck2"
               />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/81749_5.jpg" alt="subject" />
+            </div>
+          </div>
+          <div class="products-bottom">
+            <div class="foto-size">
+              <img src="img/print/artwork-preview-header-.jpg" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/BRAND.jpg" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/BRAND9.jpg" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/s-l300.jpg" alt="video-bg" />
+            </div>
+          </div>
+        </div>
+        <div class="products-foto foto-active">
+          <div class="products-top">
+            <div class="foto-size">
+              <img class="products-top" src="img/home/blog1.png" alt="blog1" />
+            </div>
+            <div class="foto-size">
+              <img class="products-top" src="img/home/blog2.png" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img class="products-top" src="img/home/blog3.png" alt="Truck2" />
             </div>
             <div class="foto-size">
               <img src="img/home/subject-1.png" alt="subject" />
             </div>
           </div>
-          <div class="products-foto2">
+          <div class="products-bottom">
             <div class="foto-size">
               <img src="img/home/subject-2.png" alt="Truck2" />
             </div>
@@ -259,6 +270,102 @@
             </div>
             <div class="foto-size">
               <img src="img/home/video-bg.png" alt="video-bg" />
+            </div>
+          </div>
+        </div>
+        <div class="products-foto foto-active">
+          <div class="products-top">
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/web/1460828057-53676-2-1.jpg"
+                alt="blog1"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/web/2bcecae60d.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/web/33af8e2011b1a5c850977cd291673ed8.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img src="img/web/50301-psd-b.jpg" alt="subject" />
+            </div>
+          </div>
+          <div class="products-bottom">
+            <div class="foto-size">
+              <img
+                src="img/web/922702334aa64373ef969e736b998b0c.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                src="img/web/c237a7d35748f47ec2efdcbcc5f55b18.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                src="img/web/Mercury-white-black-design-studio-wordpress-theme-by-mercury-54259.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                src="img/web/82cd531dadaf5905df8c7571e279766f.jpg"
+                alt="video-bg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="products-foto foto-active">
+          <div class="products-top">
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/print/Woocommerce.png"
+                alt="blog1"
+              />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/s-l300.jpg" alt="video-bg" />
+            </div>
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/print/1562945766.jpg"
+                alt="Truck2"
+              />
+            </div>
+            <div class="foto-size">
+              <img
+                class="products-top"
+                src="img/print/15f760f0691f9bc248441e36c1ef5203.jpg"
+                alt="Truck2"
+              />
+            </div>
+          </div>
+          <div class="products-bottom">
+            <div class="foto-size">
+              <img src="img/print/81749_5.jpg" alt="subject" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/artwork-preview-header-.jpg" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/BRAND.jpg" alt="Truck2" />
+            </div>
+            <div class="foto-size">
+              <img src="img/print/BRAND9.jpg" alt="Truck2" />
             </div>
           </div>
         </div>
@@ -284,7 +391,7 @@
             </p>
           </div>
 
-          <div class="products-ul">
+          <div class="products-list">
             <ul class="header-top__social">
               <li>
                 <a href="#">Facebook<i class="ti-facebook"></i></a>
@@ -302,52 +409,104 @@
           </div>
 
           <div class="foto mark-waugh">
-            <img class="mark-waugh1" src="img/blog/blog1.png" alt="blog1" />
+            <img class="mark-waugh-img" src="img/blog/blog1.png" alt="blog1" />
             <img
-              class="mark-waugh1"
+              class="mark-waugh-img"
               src="img/blog/causes/causes-1.jpg"
               alt="subject-4"
             />
             <img
-              class="mark-waugh1"
+              class="mark-waugh-img"
               src="img/blog/causes/causes-3.jpg"
               alt="blog1"
             />
             <img
-              class="mark-waugh1"
+              class="mark-waugh-img"
               src="img/blog/causes/causes-2.jpg"
               alt="blog1"
             />
           </div>
         </div>
       </section>
+      <div class="container-slider">
+        <div class="form img-one">
+          <div class="products">
+            <h2 class="hcolor">
+              Design tips, tricks, and freebies. Delivered weekly.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+              eiusmod.
+            </p>
 
-      <div class="form">
-        <div class="products">
-          <h2 class="hcolor">
-            Design tips, tricks, and freebies. Delivered weekly.
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
-            eiusmod.
-          </p>
+            <div class="half-width max">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Email Address..."
+              />
 
-          <div class="half-width max">
-            <input
-              class="email"
-              type="email"
-              name="email"
-              required
-              placeholder="Email Address..."
-            />
-
-            <div class="buttons">
-              <input class="button mt-xl-3" type="submit" value="SUBSCRIBE" />
+              <div class="buttons">
+                <input class="button mt-xl-3" type="submit" value="SUBSCRIBE" />
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="form img-two">
+          <div class="products">
+            <h2 class="hcolor">
+              Design tips, tricks, and freebies. Delivered weekly.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+              eiusmod.
+            </p>
 
+            <div class="half-width max">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Email Address..."
+              />
+
+              <div class="buttons">
+                <input class="button mt-xl-3" type="submit" value="SUBSCRIBE" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form img-three">
+          <div class="products">
+            <h2 class="hcolor">
+              Design tips, tricks, and freebies. Delivered weekly.
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
+              eiusmod.
+            </p>
+
+            <div class="half-width max">
+              <input
+                class="email"
+                type="email"
+                name="email"
+                required
+                placeholder="Email Address..."
+              />
+
+              <div class="buttons">
+                <input class="button mt-xl-3" type="submit" value="SUBSCRIBE" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
       <div class="products-text Meet">
         <h2 id="contacts" class="hcolor">get in touch</h2>
         <p>
@@ -442,5 +601,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/up-button.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
