@@ -23,6 +23,10 @@ body {
   background-color: white;
   color: #4c4c4c;
 }
+.container-width {
+  margin: 0 auto;
+  max-width: 2500px;
+}
 a:hover {
   transition: all 0.2s linear;
   border: 0px;
@@ -267,6 +271,7 @@ div.menuToggle {
 .products-foto img:hover {
   transition: all 0.2s linear;
   filter: grayscale(0) blur(0px);
+  transform: scale(1.1);
 }
 .products-text.Meet {
   text-align: left;
@@ -398,6 +403,7 @@ div.menuToggle {
 .form-fieldset {
   display: flex;
   justify-content: space-around;
+  position: relative;
 }
 fieldset {
   width: 56%;
@@ -421,9 +427,11 @@ textarea {
 }
 
 .buttons2 {
-  margin-left: 5%;
+  margin: 10px 5%;
 }
 textarea {
+  font-size: 1rem;
+
   width: 90%;
 }
 input:hover,
@@ -504,6 +512,8 @@ section.form-fieldset {
 }
 
 input {
+  font-size: 1rem;
+
   box-shadow: 0px;
   border: 0px;
   cursor: pointer;
@@ -622,4 +632,129 @@ div#menuToggle {
   border: 0;
   border-radius: 0;
   background: none;
+}
+/* popup================================================ */
+
+.card__button {
+  padding: 10px;
+  background-color: #ff2d2d;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: #82da03;
+}
+
+.card__button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #6cb502;
+}
+
+.modal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal--show {
+  display: block;
+}
+
+.modal::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.modal__content {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 40%;
+  background-color: #ffffff;
+  box-shadow: -1px 5px 12px 0 rgba(89, 90, 90, 0.3);
+  z-index: 2;
+  padding: 10px 50px;
+}
+.comment-list {
+  font-size: 2rem;
+  padding: 20px;
+}
+.modal__button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 20px;
+  height: 20px;
+
+  font-size: 0;
+
+  background: none;
+  border: 0;
+}
+
+.modal__button::after,
+.modal__button::before {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 20px;
+
+  width: 26px;
+  height: 6px;
+  margin: -13px -3px;
+
+  background-color: #7656de;
+}
+
+.modal__button::before {
+  transform: rotate(45deg);
+}
+
+.modal__button::after {
+  transform: rotate(-45deg);
+}
+
+.modal__button:hover::after,
+.modal__button:hover::before,
+.modal__button:focus::after,
+.modal__button:focus::before {
+  background-color: #9b7ff7;
+}
+
+.modal__button:active::after,
+.modal__button:active::before {
+  background-color: #4023a0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

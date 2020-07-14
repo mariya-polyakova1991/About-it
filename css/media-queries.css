@@ -13,6 +13,9 @@
   .form {
     width: 100%;
   }
+  .modal__content {
+    width: 80%;
+  }
 }
 
 
