@@ -17,6 +17,10 @@ openPopupButton.addEventListener("click", function (evt) {
     email.value +
     ", Your message: " +
     commentField.value;
+
+  name.value = "";
+  email.value = "";
+  commentField.value = "";
 });
 
 closePopupButton.addEventListener("click", function () {
